@@ -111,5 +111,3 @@ We thank the Example Research Council for funding support and colleagues for val
 ## Cata is teaching us how to use Quarto
 
 # Now I want to see some differences
-
-[@knuth84]
