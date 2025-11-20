@@ -115,3 +115,5 @@ We thank the Example Research Council for funding support and colleagues for val
 # There are more updates
 
 ## Can you see the changes??
+
+Now it should work the quarto render. So, does the error disappeared?
