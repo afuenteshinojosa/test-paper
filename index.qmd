@@ -1,7 +1,7 @@
 ---
 title: "Sustainable Economic Models in Urban Ecosystems"
 author:
-  - name: "Alice Smith"
+  - name: "Alice Beckmann"
     email: alice.smith@example.com
     affiliations:
       - ref: dee
@@ -67,6 +67,7 @@ This study highlights the importance of combining economic and ecological modeli
 # Test
 
 ## Section
+
 This is a simple placeholder for the manuscript's main document [@knuth84].
 
 ```{r}
@@ -75,7 +76,7 @@ a <- 1 + 2
 print(a)
 ```
 
-This is new 
+This is new
 
 ![test image](imgs/test.png)
 
@@ -106,3 +107,9 @@ rep(9, 10) - seq(1, 10)
 # Acknowledgements {.unnumbered}
 
 We thank the Example Research Council for funding support and colleagues for valuable feedback.
+
+## Cata is teaching us how to use Quarto
+
+# Now I want to see some differences
+
+[@knuth84]
