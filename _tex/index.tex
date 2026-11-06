@@ -107,6 +107,7 @@
 \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
 
 \usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -212,11 +213,16 @@
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
+% fallback for those not using the hyperref driver hyperxmp:
+\makeatletter
+\@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
+\makeatother
 \hypersetup{
   pdftitle={Sustainable Economic Models in Urban Ecosystems},
   pdfauthor={Alice Beckmann; Bob Johnson; Carol Lee},
-  pdfkeywords={urban ecosystems, sustainability, ecological
-economics, policy modeling},
+  pdfkeywords={\xmpquote{urban
+ecosystems}, \xmpquote{sustainability}, \xmpquote{ecological
+economics}, \xmpquote{policy modeling}},
   colorlinks=true,
   linkcolor={blue},
   filecolor={Maroon},
@@ -355,7 +361,7 @@ This is new
 
 This is a plot:
 
-\phantomsection\label{cell-fig-line-plot}
+\protect\phantomsection\label{cell-fig-line-plot}
 \begin{figure}[H]
 
 \centering{
